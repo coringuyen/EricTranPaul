@@ -8,12 +8,12 @@ public class Tran_Unit : MonoBehaviour, baseClass
     public int unit_health;
     public int attack_damages;
     public int ability_damages;
-
     string name_of_ability;
 
     void Start()
     {
         createAbility("slapping");
+        Debug.Log(name_of_ability);
         unit_health = health;
     }
 
