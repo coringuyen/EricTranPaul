@@ -48,8 +48,8 @@ public class FSM<T>
                 return true;
             }
         }
-        Debug.Log("ERROR, INVALID TRANSITION " + from.ToString() + "->" + to.ToString());
-        Debug.Log("CURRENT STATE: " + from.ToString());
+        //Debug.Log("ERROR, INVALID TRANSITION " + from.ToString() + "->" + to.ToString());
+        //Debug.Log("CURRENT STATE: " + from.ToString());
         return false;
     }
 
@@ -58,7 +58,7 @@ public class FSM<T>
         if(CheckTransition(currentState, to))
         {
             currentState = to;
-            Debug.Log("NEW STATE: " + currentState.ToString());
+            //Debug.Log("NEW STATE: " + currentState.ToString());
             return true;
         }
         else
