@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\FSM.cs" />
+    <Compile Include="Assets\Scripts\GUI_PC.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\Special_Abilites.cs" />
   </ItemGroup>
