@@ -4,6 +4,7 @@ using System;
 
 public class Tran_Unit : MonoBehaviour, baseClass
 {
+    public int target_heath;
     public int unit_health;
     public int attack_damages;
     public int ability_damages;
@@ -38,6 +39,6 @@ public class Tran_Unit : MonoBehaviour, baseClass
 
     public void takeDamage(int damage)
     {
-        health -= damage;
+        target_heath -= damage;
     }
 }
