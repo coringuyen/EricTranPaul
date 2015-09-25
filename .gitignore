@@ -65,3 +65,9 @@ $RECYCLE.BIN/
 *.sln
 *.suo
 *.csproj
+FFVII/ProjectSettings/ProjectSettings.asset
+*.csproj
+FFVII/UnityVS.FFVII.CSharp.Plugins.csproj
+*.csproj
+*.csproj
+FFVII/UnityVS.FFVII.CSharp.csproj

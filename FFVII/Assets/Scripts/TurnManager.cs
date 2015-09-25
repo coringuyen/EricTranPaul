@@ -5,7 +5,7 @@ public class TurnManager : MonoBehaviour
 {
     public int turnNumber;
     public List<GameObject> players;
-    public GameObject currentTurn;
+    static public GameObject currentTurn;
 
     public void NextTurn()
     {
