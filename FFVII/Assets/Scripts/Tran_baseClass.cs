@@ -15,7 +15,7 @@ public interface baseClass
 
     void specialAbility(GameObject target);
 
-    void createAbility(string ability_name);
+    void createAbility();
 
     
 }

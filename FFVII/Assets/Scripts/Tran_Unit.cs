@@ -8,12 +8,12 @@ public class Tran_Unit : MonoBehaviour, baseClass
     public int unit_health;
     public int attack_damages;
     public int ability_damages;
-    string name_of_ability;
+
+    public string name_of_ability;
 
     void Start()
     {
-        createAbility("slapping");
-        Debug.Log(name_of_ability);
+        createAbility();
         unit_health = health;
     }
 
@@ -34,6 +34,7 @@ public class Tran_Unit : MonoBehaviour, baseClass
     {
         target.GetComponent<Tran_Unit>().takeDamage(ability_damages);
         gameObject.GetComponent<Renderer>().material.color = m_color;
+        Debug.Log(name_of_ability);
     }
 
     public void attack(GameObject target)
@@ -46,9 +47,8 @@ public class Tran_Unit : MonoBehaviour, baseClass
         health -= damage;
     }
 
-    public void createAbility(string ability_name)
+    public void createAbility()
     {
-        name_of_ability = ability_name;
         ability_damages = Random.Range(20, 50);
     }
 }
