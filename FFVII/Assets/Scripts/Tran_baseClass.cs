@@ -9,10 +9,14 @@ public interface baseClass
         get; set;
     }
 
-    void attack();
+    void attack(GameObject target);
 
     void takeDamage(int damage);
 
-    void ability();
+    void specialAbility(GameObject target);
+
+    void createAbility(string ability_name);
+
+    
 }
 
