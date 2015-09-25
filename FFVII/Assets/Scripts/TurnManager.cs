@@ -5,7 +5,7 @@ public class TurnManager : MonoBehaviour
 {
     public int turnNumber;
     public List<GameObject> players;
-    static public GameObject currentTurn;
+    public GameObject currentTurn;
 
     public void NextTurn()
     {
@@ -18,6 +18,16 @@ public class TurnManager : MonoBehaviour
         currentTurn = players[turnNumber];
         currentTurn.GetComponent<FSM_Unit>().ToActive();
     }
+    
+    public void Attack()
+    {
+        currentTurn.GetComponent<FSM_Unit>().ToAttack();
+    }
+
+    public void Special()
+    {
+        currentTurn.GetComponent<FSM_Unit>().ToSpecial();
+    }
 
     void Awake()
     {
@@ -27,19 +37,6 @@ public class TurnManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            NextTurn();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            currentTurn.transform.position += currentTurn.transform.forward;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            currentTurn.transform.position -= currentTurn.transform.forward;
-        }
+        
     }
 }

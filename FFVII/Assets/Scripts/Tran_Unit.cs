@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Tran_Unit : MonoBehaviour, baseClass
 {
     public Color m_color;
+    public Slider hpBar;
     public int target_heath;
     public int unit_health;
     public int attack_damages;
@@ -13,7 +15,7 @@ public class Tran_Unit : MonoBehaviour, baseClass
     void Start()
     {
         createAbility("slapping");
-        Debug.Log(name_of_ability);
+        //Debug.Log(name_of_ability);
         unit_health = health;
     }
 
@@ -27,6 +29,10 @@ public class Tran_Unit : MonoBehaviour, baseClass
         set
         {
             unit_health = value;
+            hpBar.value = unit_health;
+
+            if (unit_health <= 0)
+                Destroy(gameObject);
         }
     }
 

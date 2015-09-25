@@ -47,6 +47,16 @@ public class FSM_Unit : MonoBehaviour
         _fsm.Transition(STATE.ACTIVE);
     }
 
+    public void ToAttack()
+    {
+        _fsm.Transition(STATE.ATTACK);
+    }
+
+    public void ToSpecial()
+    {
+        _fsm.Transition(STATE.SPECIAL);
+    }
+
     public void ToEnd()
     {
         _fsm.Transition(STATE.END);
