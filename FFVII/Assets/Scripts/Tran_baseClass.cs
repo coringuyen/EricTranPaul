@@ -13,6 +13,8 @@ public interface baseClass
 
     void takeDamage(int damage);
 
-    void ability();
+    void specialAbility();
+
+    void createAbility(string ability_name);
 }
 
