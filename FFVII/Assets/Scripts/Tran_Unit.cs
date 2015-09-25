@@ -30,20 +30,20 @@ public class Tran_Unit : MonoBehaviour, baseClass
         }
     }
 
-    public void specialAbility()
+    public void specialAbility(GameObject target)
     {
-        takeDamage(ability_damages);
+        target.GetComponent<Tran_Unit>().takeDamage(ability_damages);
         gameObject.GetComponent<Renderer>().material.color = m_color;
     }
 
-    public void attack()
+    public void attack(GameObject target)
     {
-        takeDamage(attack_damages);
+        target.GetComponent<Tran_Unit>().takeDamage(attack_damages);
     }
 
     public void takeDamage(int damage)
     {
-        target_heath -= damage;
+        health -= damage;
     }
 
     public void createAbility(string ability_name)
