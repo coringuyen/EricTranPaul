@@ -4,19 +4,19 @@ using UnityEngine.UI;
 
 public class GUI_PC : MonoBehaviour
 {
-    public Slider player1Health;
+    //public Slider player1Health;
     //public Slider player2Health;
     //public Slider player3Health;
 
-    public Button buttonAttack;
-    public Button buttonSpecialAttack;
+    //public Button buttonAttack;
+    //public Button buttonSpecialAttack;
     //public Button buttonEndTurn;
 
     //float health = 100;
 
     void Start()
     {
-        player1Health.value = GetComponent<Tran_Unit>().target_heath;
+        //player1Health.value = GetComponent<Tran_Unit>().target_heath;
     }
 
     //player2Health.value = unit_health;
