@@ -4,13 +4,9 @@ using System.Collections;
 
 public class Tran_Unit : MonoBehaviour, baseClass
 {
-<<<<<<< HEAD
-    public Color m_color; // change color when Unit use special ability
-=======
     public Color m_color;
     public Slider hpBar;
     public int target_heath;
->>>>>>> Mouledoux/master
     public int unit_health;
     public int attack_damages;
     public int ability_damages;
@@ -19,12 +15,9 @@ public class Tran_Unit : MonoBehaviour, baseClass
 
     void Start()
     {
-<<<<<<< HEAD
+
         createAbility();
-=======
-        createAbility("slapping");
         //Debug.Log(name_of_ability);
->>>>>>> Mouledoux/master
         unit_health = health;
     }
 
